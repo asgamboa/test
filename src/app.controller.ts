@@ -10,8 +10,8 @@ export class AppController {
     @Query('firstSensor') firstSensor: string,
     @Query('secondSensor') secondSensor: string,
   ): string {
-    console.log(firstSensor);
-    console.log(secondSensor);
+    console.log('firstSensor value: ', firstSensor);
+    console.log('secondSensor value: ', secondSensor);
     return this.appService.getHello();
   }
 }
